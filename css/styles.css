@@ -1,0 +1,242 @@
+/* Head */
+:root {
+  --first-btn-color: #4d5ae5;
+  --second-btn-color: #404bbf;
+  --logo-font: "Raleway", sans-serif;
+  --btn-text-color: #404bbf;
+  --btn-bg-color: #f4f4fd;
+  --btn-sol-color: #e7e9fc;
+  --btn-cursor: pointer;
+  --text-color: #434455;
+  --text-color-hero: #ffffff;
+  --color-tx-ourworkers: #2e2f42;
+}
+* {
+  box-sizing: border-box;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-color);
+  letter-spacing: 0.02em;
+  background: #ffffff;
+}
+
+.logo-web {
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  width: 44px;
+  height: 24px;
+  color: #4d5ae5;
+  font-family: var(--logo-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+}
+.logo-studio {
+  font-family: var(--logo-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-tx-ourworkers);
+}
+.navigation-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.33;
+  color: var(--color-tx-ourworkers);
+
+  letter-spacing: 0.02em;
+}
+.navigation-link:hover {
+  color: #404bbf;
+}
+.contacts {
+  font-style: normal;
+}
+.contacts-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--text-color);
+}
+.contacts-link:hover {
+  color: #404bbf;
+}
+
+/* main-content */
+.hero {
+  background: var(--color-tx-ourworkers);
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+
+  letter-spacing: 0.02em;
+  color: var(--text-color-hero);
+}
+.hero-button {
+  cursor: pointer;
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-color-hero);
+  padding: 16px 32px;
+  letter-spacing: 0.04em;
+}
+.hero-button:hover {
+  background: #404bbf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+/*-----------Strengths--------------*/
+
+.strengths-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  letter-spacing: 0.02em;
+  color: var(--color-tx-ourworkers);
+}
+.strengths-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+
+  color: var(--text-color);
+}
+/* --------------WHAT ARE WE DOING---------- */
+.our-work-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--color-tx-ourworkers);
+}
+img {
+  display: block;
+}
+/* -------------------OUR TEAM-------------- */
+.team-section {
+  background: #f4f4fd;
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--color-tx-ourworkers);
+}
+.team-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  letter-spacing: 0.02em;
+  color: var(--color-tx-ourworkers);
+}
+.team-position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+
+  color: var(--text-color);
+}
+/* -----------FOOTER------------- */
+.footer {
+  background: var(--color-tx-ourworkers);
+}
+.logo-studio-footer {
+  font-family: var(--logo-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #f4f4fd;
+}
+.footer-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+
+  color: #e7e9fc;
+}
+/* ----------PORTFOLIO.HTML--------------- */
+
+.button-icon {
+  cursor: var(--btn-cursor);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  background: var(--btn-bg-color);
+  padding: 12px 24px;
+  border: 1px solid var(--btn-sol-color);
+  border-radius: 4px;
+
+  letter-spacing: 0.04em;
+  color: var(--btn-text-color);
+}
+
+.button-icon:hover {
+  background: #404bbf;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+}
+.title-our-works {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+.cards-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  letter-spacing: 0.02em;
+  color: var(--color-tx-ourworkers);
+}
+.cards-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+
+  color: var(--text-color);
+}
