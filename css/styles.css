@@ -89,7 +89,7 @@ body {
 }
 .navigation-link {
   display: block;
-  padding: 24px;
+  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.33;
@@ -132,6 +132,7 @@ address {
   line-height: 1.07;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 48px;
   width: 496px;
   letter-spacing: 0.02em;
   color: var(--text-color-hero);
@@ -165,11 +166,10 @@ address {
 }
 .strengths-list {
   display: flex;
-  /* 
-  flex-direction: column;*/
-  align-items: flex-start;
+  column-gap: 24px;
 }
 .strengths {
+  width: 264px;
 }
 
 .strengths-title {
@@ -199,7 +199,7 @@ address {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--color-tx-ourworkers);
-  padding-top: 120px;
+
   margin-bottom: 72px;
 }
 .our-work-list {
@@ -223,6 +223,7 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--color-tx-ourworkers);
+  margin-bottom: 72px;
 }
 .team-list {
   display: flex;
@@ -236,8 +237,8 @@ img {
   text-align: center;
 }
 .team-mane {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .team-name {
   font-weight: 500;
@@ -245,7 +246,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-tx-ourworkers);
-  margin: 8px;
+  margin-bottom: 8px;
 }
 .team-position {
   line-height: 1.5;
@@ -329,6 +330,7 @@ img {
   background: #ffffff;
   padding-top: 32px;
   padding-bottom: 32px;
+  padding-left: 16px;
 }
 .cards-list {
   display: flex;
