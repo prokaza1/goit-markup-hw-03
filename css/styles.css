@@ -118,7 +118,7 @@ body {
 /* main-content */
 .hero {
   background: var(--color-tx-ourworkers);
-  width: 1440px;
+  /* width: 1440px;*/
   height: 600px;
   margin: 0px;
 }
@@ -328,7 +328,8 @@ img {
 }
 .cards-list {
   display: flex;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
   flex-wrap: wrap;
   padding-right: 150px;
   padding-bottom: 120px;
