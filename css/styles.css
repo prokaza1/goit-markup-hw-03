@@ -16,7 +16,9 @@
 }
 
 .container {
-  width: 1440px;
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 h1,
 h2,
@@ -40,16 +42,14 @@ ul {
 }
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+
   line-height: 1.5;
   color: var(--text-color);
   letter-spacing: 0.02em;
-  background: #ffffff;
-  margin: 0px;
+  background: var(--text-color-hero);
 }
 .header {
-  padding: 24px 156px 24px 156px;
-  margin: 0px;
+  border-bottom: 1px solid #e7e9fc;
 }
 .logo-web {
   letter-spacing: 0.03em;
@@ -75,19 +75,21 @@ body {
 }
 .navigation-container {
   display: flex;
-  gap: 332px;
+  align-items: center;
 }
 
 .navigation {
   display: flex;
-  gap: 40px;
+  gap: 76px;
+  align-items: center;
 }
 .navigation-list {
   display: flex;
   gap: 40px;
-  padding-left: 76px;
 }
 .navigation-link {
+  display: block;
+  padding: 24px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.33;
@@ -97,6 +99,9 @@ body {
 }
 .navigation-link:hover {
   color: #404bbf;
+}
+address {
+  margin-left: auto;
 }
 .contacts {
   display: flex;
@@ -118,19 +123,18 @@ body {
 /* main-content */
 .hero {
   background: var(--color-tx-ourworkers);
-  /* width: 1440px;*/
-  height: 600px;
+  padding: 188px 0;
   margin: 0px;
 }
 .hero-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-
-  padding: 188px 450px 48px 450px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 496px;
   letter-spacing: 0.02em;
   color: var(--text-color-hero);
-  margin: 0px;
 }
 .hero-button {
   cursor: pointer;
@@ -144,7 +148,9 @@ body {
   color: var(--text-color-hero);
   padding: 16px 32px;
   letter-spacing: 0.04em;
-  margin-left: 636px;
+  display: block;
+  margin: 0 auto;
+  border: none;
   gap: 10px;
 }
 .hero-button:hover {
@@ -153,35 +159,28 @@ body {
   border-radius: 4px;
 }
 /*-----------Strengths--------------*/
+.section-strengths {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .strengths-list {
   display: flex;
   /* 
   flex-direction: column;*/
   align-items: flex-start;
-  padding-left: 156px;
-  padding-right: 156px;
-  padding-top: 120px;
-  gap: 24px;
 }
 .strengths {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 8px;
 }
 
 .strengths-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-
+  margin-bottom: 8px;
   letter-spacing: 0.02em;
   color: var(--color-tx-ourworkers);
 }
 .strengths-text {
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.5;
 
   letter-spacing: 0.02em;
@@ -189,6 +188,9 @@ body {
   color: var(--text-color);
 }
 /* --------------WHAT ARE WE DOING---------- */
+.our-work {
+  padding-bottom: 120px;
+}
 .our-work-title {
   text-align: center;
   font-weight: 700;
@@ -198,13 +200,11 @@ body {
   text-transform: capitalize;
   color: var(--color-tx-ourworkers);
   padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .our-work-list {
   display: flex;
   gap: 24px;
-  align-items: flex-start;
-  padding-left: 156px;
 }
 img {
   display: block;
@@ -212,10 +212,10 @@ img {
 /* -------------------OUR TEAM-------------- */
 .team-section {
   background: #f4f4fd;
-  margin-top: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .team-title {
-  padding-top: 120px;
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -227,19 +227,17 @@ img {
 .team-list {
   display: flex;
   gap: 24px;
-  padding: 72px 156px 120px 156px;
 }
 .team-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 0px 32px;
-  gap: 32px;
   background: #ffffff;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  text-align: center;
+}
+.team-mane {
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 .team-name {
   font-weight: 500;
@@ -247,10 +245,9 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-tx-ourworkers);
+  margin: 8px;
 }
 .team-position {
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.5;
 
   letter-spacing: 0.02em;
@@ -261,9 +258,8 @@ img {
 .footer {
   background: var(--color-tx-ourworkers);
   padding-top: 100px;
-  padding-right: 1020px;
 
-  padding-left: 156px;
+  padding-bottom: 100px;
 }
 .logo-studio-footer {
   font-family: var(--logo-font);
@@ -276,24 +272,24 @@ img {
   color: #f4f4fd;
 }
 .footer-text {
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #e7e9fc;
-
-  padding-top: 16px;
-  padding-right: 1020px;
-  padding-bottom: 100px;
+  width: 264px;
+  margin-top: 16px;
 }
 /* ----------PORTFOLIO.HTML--------------- */
+.card-menu {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 .button-list {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+
   padding: 0px;
   gap: 24px;
-  margin: 96px 427px 72px 427px;
+  justify-content: center;
+  margin-bottom: 72px;
 }
 
 .button-icon {
@@ -327,25 +323,26 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
+.cards-description {
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  background: #ffffff;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .cards-list {
   display: flex;
   column-gap: 24px;
   row-gap: 48px;
   flex-wrap: wrap;
-  padding-right: 150px;
-  padding-bottom: 120px;
-  padding-left: 156px;
 }
 .cards-item {
-  background: #ffffff;
-  /* display: inline; */
-  border: 1px solid #e7e9fc;
 }
 .cards-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-
+  margin-bottom: 8px;
   letter-spacing: 0.02em;
   color: var(--color-tx-ourworkers);
 }
