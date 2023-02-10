@@ -145,6 +145,7 @@ body {
   padding: 16px 32px;
   letter-spacing: 0.04em;
   margin-left: 636px;
+  gap: 10px;
 }
 .hero-button:hover {
   background: #404bbf;
